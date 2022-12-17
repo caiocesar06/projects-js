@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Validador de CPF</title>
+</head>
+
+<body>
+	<section class="container">
+
+		<div class="gerador">
+			<h1>Gerador de CPF</h1>
+			<input type="text" class="cpf-generatted" readonly>
+			<button type="button" class="btn-copy">Copiar</button>
+			<button type="button" class="btn-generate">Gerar</button>
+		</div>
+
+		<div class="validador">
+			<h1>Validador de CPF</h1>
+			<form action="/" method="POST" class="form">
+				<label>CPF</label>
+				<input type="text" class="cpf">
+				<button type="submit">Enviar</button>
+			</form>
+			<div class="veredito"></div>
+
+		</div>
+	</section>
+	<script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
