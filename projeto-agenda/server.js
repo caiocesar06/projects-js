@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
 mongoose.connect(process.env.URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         app.emit('pronto');
